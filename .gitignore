@@ -52,3 +52,9 @@ prompt
 server.log
 # Skills directory
 /skills/venv/
+# Python venv
+venv/
+/venv/
+__pycache__/
+*.pyc
+.pytest_cache/
