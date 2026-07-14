@@ -67,6 +67,18 @@ def make_runner(algo_name, cfg, n_hidden=8, **kwargs):
                              n_hidden_max=kwargs.get('n_hidden_max', 8))
             def get_best():
                 return runner.best_genome_dict()
+        elif algo_name == 'morph_v6':
+            from src.morph_v6 import MorphV6
+            runner = MorphV6(cfg['inputs'], cfg['outputs'], pop_size=kwargs.get('pop_size', 50),
+                             n_hidden_max=kwargs.get('n_hidden_max', 8))
+            def get_best():
+                return runner.best_genome_dict()
+        elif algo_name == 'morph_v7':
+            from src.morph_v7 import MorphV7
+            runner = MorphV7(cfg['inputs'], cfg['outputs'], pop_size=kwargs.get('pop_size', 50),
+                             n_hidden_max=kwargs.get('n_hidden_max', 8))
+            def get_best():
+                return runner.best_genome_dict()
         else:
             raise ValueError(algo_name)
     return runner, get_best
@@ -83,7 +95,7 @@ def run_experiment(algo_name, env_name, generations=50, pop_size=50, seed=0,
         m, _ = evaluate_genome(genome, env_name, n_episodes=eval_episodes,
                                max_steps=cfg['max_steps'], stochastic=False,
                                seed_offset=int(env_seeds[0]))
-        return m
+        return m + cfg.get('reward_shift', 0.0)
 
     runner, get_best = make_runner(algo_name, cfg, n_hidden=n_hidden,
                                     pop_size=pop_size, n_hidden_max=n_hidden_max)
@@ -160,11 +172,9 @@ def summarize_results(logs):
         summary[key]['wall_times'].append(log['wall_time'])
         # Generations to solve: first gen where best >= solved threshold
         solved = ENV_CONFIGS[log['env']]['solved']
-        if log['env'] in ['MountainCar-v0', 'Acrobot-v1', 'Pendulum-v1']:
-            # Lower is better
-            gens_to_solve = next((h['gen'] + 1 for h in log['history'] if h['best'] >= solved), log['generations'] + 1)
-        else:
-            gens_to_solve = next((h['gen'] + 1 for h in log['history'] if h['best'] >= solved), log['generations'] + 1)
+        reward_shift = ENV_CONFIGS[log['env']].get('reward_shift', 0.0)
+        solved_shifted = solved + reward_shift
+        gens_to_solve = next((h['gen'] + 1 for h in log['history'] if h['best'] >= solved_shifted), log['generations'] + 1)
         summary[key]['gens_to_solve'].append(gens_to_solve)
     return summary
 

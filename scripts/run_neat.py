@@ -18,10 +18,10 @@ from src.eval import evaluate_genome
 
 
 ENV_CONFIGS = {
-    'CartPole-v1':    {'inputs': 4, 'outputs': 2, 'continuous': False, 'max_steps': 500, 'solved': 475.0},
-    'MountainCar-v0': {'inputs': 2, 'outputs': 3, 'continuous': False, 'max_steps': 200, 'solved': -110.0},
-    'Acrobot-v1':     {'inputs': 6, 'outputs': 3, 'continuous': False, 'max_steps': 500, 'solved': -100.0},
-    'Pendulum-v1':    {'inputs': 3, 'outputs': 1, 'continuous': True,  'max_steps': 200, 'solved': -200.0},
+    'CartPole-v1':    {'inputs': 4, 'outputs': 2, 'continuous': False, 'max_steps': 500, 'solved': 475.0, 'reward_shift': 0.0},
+    'MountainCar-v0': {'inputs': 2, 'outputs': 3, 'continuous': False, 'max_steps': 200, 'solved': -110.0, 'reward_shift': 200.0},
+    'Acrobot-v1':     {'inputs': 6, 'outputs': 3, 'continuous': False, 'max_steps': 500, 'solved': -100.0, 'reward_shift': 500.0},
+    'Pendulum-v1':    {'inputs': 3, 'outputs': 1, 'continuous': True,  'max_steps': 200, 'solved': -200.0, 'reward_shift': 1000.0},
 }
 
 
