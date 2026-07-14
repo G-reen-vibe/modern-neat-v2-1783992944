@@ -142,6 +142,16 @@ def make_runner(algo_name, cfg, n_hidden=8, env_name=None, eval_episodes=3, env_
                               is_continuous=is_cont)
             def get_best():
                 return runner.best_genome_dict()
+        elif algo_name == 'latent_morph':
+            from src.latent_morph import LatentMorph
+            is_cont = cfg.get('continuous', False)
+            runner = LatentMorph(cfg['inputs'], cfg['outputs'], pop_size=kwargs.get('pop_size', 50),
+                                  n_hidden_max=kwargs.get('n_hidden_max', 8),
+                                  env_name=env_name, max_steps=cfg['max_steps'],
+                                  n_episodes=eval_episodes, seed_offset=int(env_seeds[0]),
+                                  is_continuous=is_cont)
+            def get_best():
+                return runner.best_genome_dict()
         else:
             raise ValueError(algo_name)
     return runner, get_best
