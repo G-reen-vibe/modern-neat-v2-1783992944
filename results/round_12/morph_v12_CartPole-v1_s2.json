@@ -1,0 +1,429 @@
+{
+  "algo": "morph_v12",
+  "env": "CartPole-v1",
+  "seed": 2,
+  "pop_size": 30,
+  "generations": 50,
+  "eval_episodes": 3,
+  "n_hidden": 8,
+  "n_hidden_max": 8,
+  "history": [
+    {
+      "gen": 0,
+      "best": 38.666666666666664,
+      "mean": 11.11111111111111,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 1,
+      "best": 60.0,
+      "mean": 12.833333333333332,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 2,
+      "best": 148.33333333333334,
+      "mean": 18.51111111111111,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 3,
+      "best": 55.333333333333336,
+      "mean": 16.200000000000003,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 4,
+      "best": 98.33333333333333,
+      "mean": 24.044444444444444,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 5,
+      "best": 116.33333333333333,
+      "mean": 24.177777777777784,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 6,
+      "best": 153.0,
+      "mean": 27.977777777777774,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 7,
+      "best": 138.0,
+      "mean": 33.54444444444445,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 8,
+      "best": 105.33333333333333,
+      "mean": 29.999999999999996,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 9,
+      "best": 429.3333333333333,
+      "mean": 58.4,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 10,
+      "best": 500.0,
+      "mean": 80.05555555555557,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 11,
+      "best": 212.0,
+      "mean": 39.388888888888886,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 12,
+      "best": 197.33333333333334,
+      "mean": 45.655555555555566,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 13,
+      "best": 185.66666666666666,
+      "mean": 51.06666666666667,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 14,
+      "best": 232.0,
+      "mean": 76.34444444444443,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 15,
+      "best": 186.0,
+      "mean": 50.73333333333334,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 16,
+      "best": 495.0,
+      "mean": 117.37777777777777,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 17,
+      "best": 497.0,
+      "mean": 123.45555555555553,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 18,
+      "best": 427.0,
+      "mean": 101.8,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 19,
+      "best": 300.3333333333333,
+      "mean": 111.66666666666667,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 20,
+      "best": 500.0,
+      "mean": 116.28888888888888,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 21,
+      "best": 500.0,
+      "mean": 143.69999999999996,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 22,
+      "best": 390.6666666666667,
+      "mean": 107.84444444444443,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 23,
+      "best": 500.0,
+      "mean": 122.26666666666668,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 24,
+      "best": 500.0,
+      "mean": 157.9111111111111,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 25,
+      "best": 500.0,
+      "mean": 116.16666666666667,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 26,
+      "best": 290.0,
+      "mean": 18.744444444444447,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 27,
+      "best": 217.0,
+      "mean": 22.42777777777778,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 28,
+      "best": 59.666666666666664,
+      "mean": 19.66111111111111,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 29,
+      "best": 248.66666666666666,
+      "mean": 26.17777777777778,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 30,
+      "best": 122.33333333333333,
+      "mean": 20.51666666666667,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 31,
+      "best": 185.66666666666666,
+      "mean": 25.48888888888889,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 32,
+      "best": 301.6666666666667,
+      "mean": 33.15555555555556,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 33,
+      "best": 447.6666666666667,
+      "mean": 47.488888888888894,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 34,
+      "best": 478.0,
+      "mean": 45.883333333333326,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 35,
+      "best": 199.33333333333334,
+      "mean": 40.85555555555556,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 36,
+      "best": 187.0,
+      "mean": 36.36666666666667,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 37,
+      "best": 500.0,
+      "mean": 60.99999999999999,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 38,
+      "best": 500.0,
+      "mean": 73.13333333333334,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 39,
+      "best": 500.0,
+      "mean": 103.53333333333332,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 40,
+      "best": 500.0,
+      "mean": 62.738888888888894,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 41,
+      "best": 500.0,
+      "mean": 21.916666666666668,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 42,
+      "best": 500.0,
+      "mean": 24.466666666666665,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 43,
+      "best": 187.33333333333334,
+      "mean": 26.222222222222225,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 44,
+      "best": 500.0,
+      "mean": 29.480555555555558,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 45,
+      "best": 238.66666666666666,
+      "mean": 37.00833333333333,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 46,
+      "best": 228.33333333333334,
+      "mean": 38.13333333333333,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 47,
+      "best": 389.0,
+      "mean": 50.74166666666667,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 48,
+      "best": 500.0,
+      "mean": 70.66944444444444,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    },
+    {
+      "gen": 49,
+      "best": 500.0,
+      "mean": 68.34444444444445,
+      "n_conns": 0.0,
+      "n_nodes": 0.0,
+      "n_species": 1
+    }
+  ],
+  "final_eval": {
+    "mean": 500.0,
+    "std": 0.0,
+    "scores": [
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0
+    ]
+  },
+  "wall_time": 8.458512306213379
+}
