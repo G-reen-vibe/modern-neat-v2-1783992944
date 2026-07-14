@@ -17,6 +17,7 @@ from src.neat import NEAT
 from src.ga_baseline import FixedGA
 from src.cma_baseline import SepCMAES
 from src.eval import evaluate_genome
+from src.eval_fast import evaluate_genome_fast
 from scripts.run_neat import ENV_CONFIGS
 
 
@@ -92,9 +93,9 @@ def run_experiment(algo_name, env_name, generations=50, pop_size=50, seed=0,
     env_seeds = np.random.randint(0, 10**6, size=eval_episodes)
 
     def fitness_fn(genome):
-        m, _ = evaluate_genome(genome, env_name, n_episodes=eval_episodes,
-                               max_steps=cfg['max_steps'], stochastic=False,
-                               seed_offset=int(env_seeds[0]))
+        m, _ = evaluate_genome_fast(genome, env_name, n_episodes=eval_episodes,
+                                    max_steps=cfg['max_steps'], stochastic=False,
+                                    seed_offset=int(env_seeds[0]))
         return m + cfg.get('reward_shift', 0.0)
 
     runner, get_best = make_runner(algo_name, cfg, n_hidden=n_hidden,
@@ -144,9 +145,9 @@ def run_experiment(algo_name, env_name, generations=50, pop_size=50, seed=0,
     best_g = get_best()
     final_scores = []
     for s in range(10):
-        m, _ = evaluate_genome(best_g, env_name, n_episodes=1,
-                               max_steps=cfg['max_steps'], stochastic=False,
-                               seed_offset=10000 + s)
+        m, _ = evaluate_genome_fast(best_g, env_name, n_episodes=1,
+                                    max_steps=cfg['max_steps'], stochastic=False,
+                                    seed_offset=10000 + s)
         final_scores.append(m)
     log['final_eval'] = {'mean': float(np.mean(final_scores)),
                          'std': float(np.std(final_scores)),
