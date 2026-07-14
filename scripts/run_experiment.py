@@ -106,6 +106,12 @@ def make_runner(algo_name, cfg, n_hidden=8, env_name=None, eval_episodes=3, env_
                               is_continuous=is_cont)
             def get_best():
                 return runner.best_genome_dict()
+        elif algo_name == 'morph_v11':
+            from src.morph_v11 import MorphV11
+            runner = MorphV11(cfg['inputs'], cfg['outputs'], pop_size=kwargs.get('pop_size', 50),
+                              n_hidden_max=kwargs.get('n_hidden_max', 8))
+            def get_best():
+                return runner.best_genome_dict()
         else:
             raise ValueError(algo_name)
     return runner, get_best
