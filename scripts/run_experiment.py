@@ -21,7 +21,7 @@ from src.eval_fast import evaluate_genome_fast
 from scripts.run_neat import ENV_CONFIGS
 
 
-def make_runner(algo_name, cfg, n_hidden=8, **kwargs):
+def make_runner(algo_name, cfg, n_hidden=8, env_name=None, eval_episodes=3, env_seeds=None, **kwargs):
     """Return (runner, fitness_fn_wrapper, get_best_genome_fn)."""
     if algo_name == 'neat':
         runner = NEAT(cfg['inputs'], cfg['outputs'], pop_size=kwargs.get('pop_size', 50))
@@ -80,6 +80,22 @@ def make_runner(algo_name, cfg, n_hidden=8, **kwargs):
                              n_hidden_max=kwargs.get('n_hidden_max', 8))
             def get_best():
                 return runner.best_genome_dict()
+        elif algo_name == 'morph_v8':
+            from src.morph_v8 import MorphV8
+            runner = MorphV8(cfg['inputs'], cfg['outputs'], pop_size=kwargs.get('pop_size', 50),
+                             n_hidden_max=kwargs.get('n_hidden_max', 8))
+            def get_best():
+                return runner.best_genome_dict()
+        elif algo_name == 'morph_v9':
+            from src.morph_v9 import MorphV9
+            is_cont = cfg.get('continuous', False)
+            runner = MorphV9(cfg['inputs'], cfg['outputs'], pop_size=kwargs.get('pop_size', 50),
+                             n_hidden_max=kwargs.get('n_hidden_max', 8),
+                             env_name=env_name, max_steps=cfg['max_steps'],
+                             n_episodes=eval_episodes, seed_offset=int(env_seeds[0]),
+                             is_continuous=is_cont)
+            def get_best():
+                return runner.best_genome_dict()
         else:
             raise ValueError(algo_name)
     return runner, get_best
@@ -99,7 +115,9 @@ def run_experiment(algo_name, env_name, generations=50, pop_size=50, seed=0,
         return m + cfg.get('reward_shift', 0.0)
 
     runner, get_best = make_runner(algo_name, cfg, n_hidden=n_hidden,
-                                    pop_size=pop_size, n_hidden_max=n_hidden_max)
+                                    pop_size=pop_size, n_hidden_max=n_hidden_max,
+                                    env_name=env_name, eval_episodes=eval_episodes,
+                                    env_seeds=env_seeds)
 
     log = {'algo': algo_name, 'env': env_name, 'seed': seed, 'pop_size': pop_size,
            'generations': generations, 'eval_episodes': eval_episodes,
