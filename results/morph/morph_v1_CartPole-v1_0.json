@@ -1,0 +1,267 @@
+{
+  "algo": "morph_v1",
+  "env": "CartPole-v1",
+  "seed": 0,
+  "pop_size": 30,
+  "generations": 30,
+  "history": [
+    {
+      "gen": 0,
+      "best": 263.6,
+      "mean": 28.53333333333334,
+      "n_active_conns_best": 8,
+      "n_active_conns_mean": 8.466666666666667,
+      "gate_temp": 2.0
+    },
+    {
+      "gen": 1,
+      "best": 427.6,
+      "mean": 48.74666666666667,
+      "n_active_conns_best": 9,
+      "n_active_conns_mean": 10.166666666666666,
+      "gate_temp": 2.0
+    },
+    {
+      "gen": 2,
+      "best": 500.0,
+      "mean": 94.76,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 12.066666666666666,
+      "gate_temp": 2.0
+    },
+    {
+      "gen": 3,
+      "best": 500.0,
+      "mean": 117.77333333333331,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 14.1,
+      "gate_temp": 2.0
+    },
+    {
+      "gen": 4,
+      "best": 500.0,
+      "mean": 133.61333333333332,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 16.133333333333333,
+      "gate_temp": 2.0
+    },
+    {
+      "gen": 5,
+      "best": 500.0,
+      "mean": 143.56,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 18.333333333333332,
+      "gate_temp": 2.0
+    },
+    {
+      "gen": 6,
+      "best": 500.0,
+      "mean": 174.30666666666667,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 19.333333333333332,
+      "gate_temp": 2.0
+    },
+    {
+      "gen": 7,
+      "best": 500.0,
+      "mean": 188.41333333333333,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 21.566666666666666,
+      "gate_temp": 2.0
+    },
+    {
+      "gen": 8,
+      "best": 500.0,
+      "mean": 250.0333333333333,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 22.466666666666665,
+      "gate_temp": 2.0
+    },
+    {
+      "gen": 9,
+      "best": 500.0,
+      "mean": 189.22666666666666,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 23.866666666666667,
+      "gate_temp": 2.0
+    },
+    {
+      "gen": 10,
+      "best": 500.0,
+      "mean": 217.24000000000007,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 23.466666666666665,
+      "gate_temp": 1.94
+    },
+    {
+      "gen": 11,
+      "best": 500.0,
+      "mean": 246.70666666666668,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 25.3,
+      "gate_temp": 1.88
+    },
+    {
+      "gen": 12,
+      "best": 500.0,
+      "mean": 235.21999999999997,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 25.0,
+      "gate_temp": 1.82
+    },
+    {
+      "gen": 13,
+      "best": 500.0,
+      "mean": 221.47333333333333,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 25.233333333333334,
+      "gate_temp": 1.76
+    },
+    {
+      "gen": 14,
+      "best": 500.0,
+      "mean": 204.8466666666667,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 26.166666666666668,
+      "gate_temp": 1.7
+    },
+    {
+      "gen": 15,
+      "best": 500.0,
+      "mean": 249.14,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 25.466666666666665,
+      "gate_temp": 1.64
+    },
+    {
+      "gen": 16,
+      "best": 500.0,
+      "mean": 226.07333333333335,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 26.6,
+      "gate_temp": 1.58
+    },
+    {
+      "gen": 17,
+      "best": 500.0,
+      "mean": 228.13333333333333,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 27.266666666666666,
+      "gate_temp": 1.52
+    },
+    {
+      "gen": 18,
+      "best": 500.0,
+      "mean": 222.0,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 29.566666666666666,
+      "gate_temp": 1.46
+    },
+    {
+      "gen": 19,
+      "best": 500.0,
+      "mean": 202.98,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 30.633333333333333,
+      "gate_temp": 1.4
+    },
+    {
+      "gen": 20,
+      "best": 500.0,
+      "mean": 221.54000000000002,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 28.9,
+      "gate_temp": 1.34
+    },
+    {
+      "gen": 21,
+      "best": 500.0,
+      "mean": 187.98666666666665,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 29.8,
+      "gate_temp": 1.2799999999999998
+    },
+    {
+      "gen": 22,
+      "best": 500.0,
+      "mean": 176.92000000000002,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 33.6,
+      "gate_temp": 1.22
+    },
+    {
+      "gen": 23,
+      "best": 500.0,
+      "mean": 231.7866666666667,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 33.36666666666667,
+      "gate_temp": 1.16
+    },
+    {
+      "gen": 24,
+      "best": 500.0,
+      "mean": 220.27333333333334,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 34.53333333333333,
+      "gate_temp": 1.1
+    },
+    {
+      "gen": 25,
+      "best": 500.0,
+      "mean": 210.8,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 31.733333333333334,
+      "gate_temp": 1.04
+    },
+    {
+      "gen": 26,
+      "best": 500.0,
+      "mean": 218.76000000000005,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 27.533333333333335,
+      "gate_temp": 0.98
+    },
+    {
+      "gen": 27,
+      "best": 500.0,
+      "mean": 234.48000000000002,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 28.166666666666668,
+      "gate_temp": 0.9199999999999999
+    },
+    {
+      "gen": 28,
+      "best": 500.0,
+      "mean": 254.61333333333334,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 28.466666666666665,
+      "gate_temp": 0.8600000000000001
+    },
+    {
+      "gen": 29,
+      "best": 500.0,
+      "mean": 183.5066666666667,
+      "n_active_conns_best": 14,
+      "n_active_conns_mean": 31.833333333333332,
+      "gate_temp": 0.8
+    }
+  ],
+  "final_eval": {
+    "mean": 500.0,
+    "std": 0.0,
+    "scores": [
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0
+    ]
+  },
+  "wall_time": 13.37866497039795,
+  "n_active_conns_final": 14
+}
