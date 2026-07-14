@@ -556,6 +556,44 @@ for generation in range(max_gens):
           <TabsContent value="analysis" className="space-y-6">
             <Card>
               <CardHeader>
+                <CardTitle>Overall Algorithm Comparison</CardTitle>
+                <CardDescription>Normalized radar chart (higher = better). Each axis shows performance on one env.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <img src="/figures/radar_comparison.png" alt="Radar chart comparing algorithms" className="w-full max-w-2xl mx-auto rounded-md" />
+                <p className="text-sm text-muted-foreground mt-3 text-center">
+                  MORPH v14 dominates on Acrobot (the topology-dependent task). NEAT edges out on MountainCar.
+                  All methods perform well on CartPole. Latent MORPH is competitive despite being much faster.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Speed vs Quality</CardTitle>
+                <CardDescription>Wall time vs final eval return. Dashed line = solved threshold.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <img src="/figures/speed_vs_quality.png" alt="Speed vs quality scatter" className="w-full rounded-md" />
+                <p className="text-sm text-muted-foreground mt-3">
+                  NEAT is fastest on CartPole but fails on Acrobot. MORPH v14 is the best balance: solves Acrobot
+                  with moderate time. Latent MORPH is fastest overall but slightly less consistent.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Convergence Rate</CardTitle>
+                <CardDescription>Generations to reach 90% of best performance (lower = faster convergence).</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <img src="/figures/convergence_rate.png" alt="Convergence rate" className="w-full rounded-md" />
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
                 <CardTitle>When MORPH Wins, Loses, and Why</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
